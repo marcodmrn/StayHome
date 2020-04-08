@@ -1,0 +1,28 @@
+header {
+  background-color: #17111c;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  height: 64px;
+  margin-left: 50px;
+  a {
+    font-size: 24px;
+    color: #ff8b37;
+    text-decoration: none;
+  }
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 5%;
+  height: 64px;
+  margin-right: 50px;
+}
