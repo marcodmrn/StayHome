@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/style.scss" />
     <script src="../js/script.js"></script>
-    <title>Sign In</title>
+    <title>Log In</title>
   </head>
   <body>
     <header>
@@ -33,5 +33,43 @@
         />
       </article>
     </header>
+    <img class="hero__img" src="../img/bg.png" alt="background image" />
+    <article class="signIn">
+      <h1 class="signIn__title">Log In</h1>
+      <form class="signIn__form">
+        <div>
+          <input
+            placeholder="E-mail"
+            type="text"
+            name="email"
+            id="email"
+            class="signIn__input"
+            required
+          />
+        </div>
+        <div>
+          <input
+            placeholder="Password"
+            type="text"
+            name="password"
+            id="password"
+            class="signIn__input"
+            required
+          />
+        </div>
+        <div class="signIn__submit">
+          <label for="remeber">
+            <input
+              type="checkbox"
+              name="remember"
+              id="remember"
+              class="signIn__input signIn__input--check"
+            />
+            Remember me
+          </label>
+          <button type="submit" class="signIn__button">Log In</button>
+        </div>
+      </form>
+    </article>
   </body>
 </html>
