@@ -5,6 +5,11 @@
 img {
   max-width: 100%;
 }
+.header {
+  height: 64px;
+  background-color: #17111c;
+}
 @import "reset.css";
 @import "header.scss";
 @import "hero.scss";
+@import "landing_pageInfo.scss";
