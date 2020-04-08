@@ -3,4 +3,4 @@ GROUPE 11 :
 - COUSIN Charles
 - HUBER Quentin
 - DE AMORIN Marco  
--  Dorian
+- VIDAL Dorian
