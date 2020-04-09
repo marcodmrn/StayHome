@@ -26,12 +26,58 @@
     justify-content: center;
   }
 }
-.category__action {
-  display: flex;
+.main__category {
+  display: grid;
+  grid-template-rows: minmax(100px, max-content);
+  grid-gap: 30px;
+  margin-top: 40px;
+}
+.category__row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 40px;
+  overflow: hidden;
   .movie {
-    width: 310px;
-    height: 180px;
+    width: 300px;
+    height: 200px;
     border-radius: 20px;
-    background-color: brown;
+    background-color: blueviolet;
   }
+}
+.category__trending::after {
+  content: "Action";
+  color: #ff8b37;
+  font-size: 30px;
+}
+.category::before {
+  content: "Trending";
+  color: #ff8b37;
+  font-size: 30px;
+}
+
+.category__action::after {
+  content: "Romance";
+  color: #ff8b37;
+  font-size: 30px;
+}
+
+.category__romance::after {
+  content: "Comedy";
+  color: #ff8b37;
+  font-size: 30px;
+}
+.category__comedy::after {
+  content: "Horror";
+  color: #ff8b37;
+  font-size: 30px;
+}
+.category__horror::after {
+  content: "Thriller";
+  color: #ff8b37;
+  font-size: 30px;
+}
+.category__thriller::after {
+  content: "Drama";
+  color: #ff8b37;
+  font-size: 30px;
 }
