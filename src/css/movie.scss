@@ -1,0 +1,83 @@
+.main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main__trending {
+  width: 1080px;
+  height: 250px;
+  background-color: blueviolet;
+  margin-top: 80px;
+}
+.main__choose {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 80px;
+  div {
+    width: 148px;
+    height: 148px;
+    border-radius: 100px;
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.main__category {
+  display: grid;
+  grid-template-rows: minmax(100px, max-content);
+  grid-gap: 30px;
+  margin-top: 40px;
+}
+.category__row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 40px;
+  overflow: hidden;
+  .movie {
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+    background-color: blueviolet;
+  }
+}
+.category__trending::after {
+  content: "Action";
+  color: #ff8b37;
+  font-size: 30px;
+}
+.category::before {
+  content: "Trending";
+  color: #ff8b37;
+  font-size: 30px;
+}
+
+.category__action::after {
+  content: "Romance";
+  color: #ff8b37;
+  font-size: 30px;
+}
+
+.category__romance::after {
+  content: "Comedy";
+  color: #ff8b37;
+  font-size: 30px;
+}
+.category__comedy::after {
+  content: "Horror";
+  color: #ff8b37;
+  font-size: 30px;
+}
+.category__horror::after {
+  content: "Thriller";
+  color: #ff8b37;
+  font-size: 30px;
+}
+.category__thriller::after {
+  content: "Drama";
+  color: #ff8b37;
+  font-size: 30px;
+}
