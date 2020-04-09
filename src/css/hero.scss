@@ -47,3 +47,18 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.sellingPoints {
+  background-color: #271d30;
+  justify-content: center;
+  padding-top: 50px;
+  h2 {
+    background-color: #4d4554;
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    height: 130px;
+    line-height: 65px;
+    margin-top: 50px;
+  }
+}
