@@ -5,6 +5,8 @@ const volumeDown = document.querySelector(".volume-down");
 const forward = document.querySelector(".forward");
 const backOff = document.querySelector(".backOff");
 var progress = document.querySelector("progress");
+var sound = document.querySelector("sound");
+var volume = document.querySelector("volume");
 
 volumeDown.addEventListener("click", () => {
   if (video.volume - 0.1 <= 0) {
@@ -68,3 +70,19 @@ function move() {
 video.addEventListener("timeupdate", function () {
   progress.value = video.currentTime / video.duration;
 });
+
+// sound mute/unmute marche pas rip
+
+function mute() {
+  if (video.muted) {
+    video.muted = false;
+    sound.innerHTML = "Mute";
+  } else {
+    video.muted = true;
+    sound.innerHTML = "Unmute";
+  }
+}
+
+function setvolume() {
+  video.volume = volume.value / 100;
+}
