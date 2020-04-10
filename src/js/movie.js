@@ -7,6 +7,7 @@ for (var i = 0; i < movies.length; i++) {
   });
 }
 
-function openPlayer(url) {
-  location.replace("player.html");
+function openPlayer(movieURL) {
+  // var urlQuery = encodeURIComponent("");
+  location.replace("player.html?movieURL=" + movieURL + "&load=true");
 }

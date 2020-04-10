@@ -38,10 +38,10 @@ backOff.addEventListener("click", () => {
   video.currentTime -= 10;
 });
 
-video.addEventListener("timeupdate", () => {
-  const progress = video.currentTime / video.duration;
-  bar.style.transform = "scaleX(" + progress + ")";
-});
+// video.addEventListener("timeupdate", () => {
+//   const progress = video.currentTime / video.duration;
+//   bar.style.transform = "scaleX(" + progress + ")";
+// });
 
 // comprhension de code
 /* var progress = 0;
