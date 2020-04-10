@@ -4,13 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/style.scss" />
+     <script defer src="../js/script.js"></script>
+     <script defer src="../js/movie.js"></script>
     <title>StayHome</title>
   </head>
   <body>
     <header>
       <ul class="navbar">
         <li classe="navbar__logo">
-          <a href="#">Stay@Home</a>
+          <a href="../index.html">Stay@Home</a>
         </li>
         <li>
           <a href="#">Movies</a>
@@ -36,12 +38,12 @@
       <div class="main">
         <div class="main__trending"></div>
         <div class="main__choose">
-          <div><a href="#">Action</a></div>
-          <div><a href="#">Romance</a></div>
-          <div><a href="#">Comedy</a></div>
-          <div><a href="#">Horror</a></div>
-          <div><a href="#">Thriller</a></div>
-          <div><a href="#">Drama</a></div>
+          <div><a href=#action>Action</a></div>
+          <div><a href="#romance">Romance</a></div>
+          <div><a href="#comedy">Comedy</a></div>
+          <div><a href="#horror">Horror</a></div>
+          <div><a href="#thriller">Thriller</a></div>
+          <div><a href="#drama">Drama</a></div>
         </div>
         <div class="main__category category">
           <div class="category__row category__trending">
@@ -52,24 +54,15 @@
             <div class="movie"></div>
 
           </div>
-          <div class="category__row category__action">
-            <div class="movie"></div>
-            <div class="movie"></div>
-            <div class="movie"></div>
-            <div class="movie"></div>
-            <div class="movie"></div>
-
-          </div>
-          <div class="category__row category__romance">
-            <div class="movie"></div>
-            <div class="movie"></div>
+          <div class="category__row category__action" id="action">
+            <div class="movie am_1" data-movie="../movies/actionM1.mp4"></div>
+            <div class="movie am_2" data-movie="../movies/actionM2.mp4"></div>
             <div class="movie"></div>
             <div class="movie"></div>
             <div class="movie"></div>
 
           </div>
-
-          <div class="category__row category__comedy">
+          <div class="category__row category__romance" id="romance">
             <div class="movie"></div>
             <div class="movie"></div>
             <div class="movie"></div>
@@ -78,7 +71,7 @@
 
           </div>
 
-          <div class="category__row category__horror">
+          <div class="category__row category__comedy" id="comedy">
             <div class="movie"></div>
             <div class="movie"></div>
             <div class="movie"></div>
@@ -86,7 +79,8 @@
             <div class="movie"></div>
 
           </div>
-          <div class="category__row category__thriller">
+
+          <div class="category__row category__horror" id="horror">
             <div class="movie"></div>
             <div class="movie"></div>
             <div class="movie"></div>
@@ -94,7 +88,15 @@
             <div class="movie"></div>
 
           </div>
-          <div class="category__row category__drama">
+          <div class="category__row category__thriller" id="thriller">
+            <div class="movie"></div>
+            <div class="movie"></div>
+            <div class="movie"></div>
+            <div class="movie"></div>
+            <div class="movie"></div>
+
+          </div>
+          <div class="category__row category__drama" id="drama">
             <div class="movie"></div>
             <div class="movie"></div>
             <div class="movie"></div>
