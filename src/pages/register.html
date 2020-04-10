@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.scss" />
+    <link rel="stylesheet" href="../js/script.js" />
+    <title>Register</title>
+  </head>
+  <body>
+    <header>
+      <ul class="navbar">
+        <li classe="navbar__logo">
+          <a href="../index.html">Stay@Home</a>
+        </li>
+        <li>
+          <a href="movie.html">Movies</a>
+        </li>
+        <li>
+          <a href="#">TV Shows</a>
+        </li>
+      </ul>
+      <article class="icons">
+        <img
+          src="../img/search-line.svg"
+          class="icons__search"
+          alt="search icon"
+        />
+        <img
+          src="../img/account-circle-line.svg"
+          class="icons__user"
+          alt="user icon"
+        />
+      </article>
+    </header>
+    <main>
+      <img class="hero__img" src="../img/bg.png" alt="background image" />
+      <article class="create">
+        <h1 class="register__title">Register</h1>
+        <form class="register__form">
+          <div>
+            <input
+              placeholder="Name"
+              type="text"
+              name="name"
+              id="name"
+              class="register__input"
+              required
+            />
+          </div>
+          <div>
+            <input
+              placeholder="E-mail"
+              type="text"
+              name="email"
+              id="email"
+              class="register__input"
+              required
+            />
+          </div>
+          <div>
+            <input
+              placeholder="Password"
+              type="text"
+              name="password"
+              id="password"
+              class="register__input"
+              required
+            />
+          </div>
+          <div>
+            <input
+              placeholder="Confirm Password"
+              type="text"
+              name="confirm_password"
+              id="confirm_password"
+              class="register__input"
+              required
+            />
+          </div>
+          <div class="register__submit">
+            <label for="CGU">
+              <input
+                type="checkbox"
+                name="CGU"
+                id="CGU"
+                class="register__input--check"
+                required
+              />
+              I have read and agree the turns and conditions of utilisation
+            </label>
+            <button type="submit" class="register__button">Register</button>
+          </div>
+        </form>
+      </article>
+    </main>
+    <footer>
+      <div class="footer">
+        <div></div>
+        <div class="legal">
+          <h3>Stay@Home</h3>
+          <ul class="legal__mention">
+            <li>Terms and Privacy Notice</li>
+            <li>Send Us feedback</li>
+            <li>Legal Notice</li>
+          </ul>
+          <p class="legal__copyright">
+            2020, Stay@Home.netlify.com, Inc. or its affiliates
+          </p>
+        </div>
+        <div class="social">
+          <h3>Follow Us</h3>
+          <ul class="social__media">
+            <li><img src="../img/Insta.svg" alt="instagram" /></li>
+            <li><img src="../img/youtube.svg" alt="youtube" /></li>
+            <li><img src="../img/twitter.svg" alt="twitter" /></li>
+            <li><img src="../img/facebook.svg" alt="facebook" /></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
