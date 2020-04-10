@@ -15,35 +15,44 @@
           ><button><img src="../img/backarrow.png" alt="return" /></button
         ></a>
       </div>
-      <div class="controller">
-        <div class="controller__left">
-          <button class="play">
-            <img src="../img/play.svg" alt="play pause" />
-          </button>
-          <button class="backOff">
-            <img src="../img/back.svg" alt="backoff 10s" />
-          </button>
-          <button class="forward">
-            <img src="../img/forward.svg" alt="forward 10s" />
-          </button>
-          <button class="volume-down">
-            <img src="../img/less.png" alt="volume down" />
-          </button>
-          <button class="volume-up">
-            <img src="../img/more.png" alt="volume up" />
-          </button>
+      <div class="player__info">
+        <div>
+          <progress class="progress" value="0"> </progress>
         </div>
-        <div class="player__title">BabySitting</div>
-        <div class="controller__right">
-          <!-- <button class="next">
-            <img src="../img/next.svg" alt="next episode" />
-          </button> -->
-          <button class="subtitle" data-state="subtitle">
-            <img src="../img/subtitle.svg" alt="subtitle" />
-          </button>
-          <button class="screen">
-            <img src="../img/screen.svg" alt="full screen" onclick="goFull()" />
-          </button>
+        <div class="controller">
+          <div class="controller__left">
+            <button class="play">
+              <img src="../img/play.svg" alt="play pause" />
+            </button>
+            <button class="backOff">
+              <img src="../img/back.svg" alt="backoff 10s" />
+            </button>
+            <button class="forward">
+              <img src="../img/forward.svg" alt="forward 10s" />
+            </button>
+            <button class="volume-down">
+              <img src="../img/less.png" alt="volume down" />
+            </button>
+            <button class="volume-up">
+              <img src="../img/more.png" alt="volume up" />
+            </button>
+          </div>
+          <div class="player__title">BabySitting</div>
+          <div class="controller__right">
+            <!-- <button class="next">
+              <img src="../img/next.svg" alt="next episode" />
+            </button> -->
+            <button class="subtitle" data-state="subtitle">
+              <img src="../img/subtitle.svg" alt="subtitle" />
+            </button>
+            <button class="screen">
+              <img
+                src="../img/screen.svg"
+                alt="full screen"
+                onclick="goFull()"
+              />
+            </button>
+          </div>
         </div>
       </div>
     </div>

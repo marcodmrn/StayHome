@@ -4,7 +4,7 @@ const play = document.querySelector(".play");
 const volumeDown = document.querySelector(".volume-down");
 const forward = document.querySelector(".forward");
 const backOff = document.querySelector(".backOff");
-const bar = document.querySelector(".bar");
+var progress = document.querySelector("progress");
 
 volumeDown.addEventListener("click", () => {
   if (video.volume - 0.1 <= 0) {
@@ -62,3 +62,9 @@ function move() {
     }
   }
 } */
+
+// progress
+
+video.addEventListener("timeupdate", function () {
+  progress.value = video.currentTime / video.duration;
+});
