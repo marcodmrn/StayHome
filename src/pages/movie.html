@@ -9,8 +9,8 @@
     <title>StayHome</title>
   </head>
   <body>
-    <header>
-      <ul class="navbar">
+    <header class="nonModal">
+        <ul class="navbar">
         <li classe="navbar__logo">
           <a href="../index.html">Stay@Home</a>
         </li>
@@ -18,7 +18,7 @@
           <a href="#">Movies</a>
         </li>
         <li>
-          <a href="player.html">TV Shows</a>
+          <a href="#">TV Shows</a>
         </li>
       </ul>
       <article class="icons">
@@ -35,6 +35,7 @@
       </article>
     </header>
     <main>
+      <div class="nonModal">
       <div class="main">
         <div class="main__trending"></div>
         <div class="main__choose">
@@ -55,8 +56,8 @@
 
           </div>
           <div class="category__row category__action" id="action">
-            <div class="movie am_1" data-movie="../movies/actionM1.mp4"></div>
-            <div class="movie am_2" data-movie="../movies/actionM2.mp4"></div>
+            <div class="movie am_1" data-movie="actionM1" data-movie-name="tenet"></div>
+            <div class="movie am_2" data-movie="actionM2" data-movie-name="extraction"></div>
             <div class="movie"></div>
             <div class="movie"></div>
             <div class="movie"></div>
@@ -107,8 +108,28 @@
         </div>
         </div>
       </div>
+      </div>
+      <div class="modalPlayer">
+      <div class="wrapper"><video class="video"></video></div>
+      <div class="controller">
+        <button class="play">
+          <img src="../img/play.svg" alt="play pause" />
+        </button>
+        <button class="backOff">
+          <img src="../img/back.svg" alt="backoff 10s" />
+        </button>
+        <button class="forward">
+          <img src="../img/forward.svg" alt="forward 10s" />
+        </button>
+        <button class="volume-up">+</button>
+        <button class="volume-down">-</button>
+      </div>
+      <div class="Progress">
+        <div class="Bar"></div>
+      </div>
+      </div>
     </main>
-    <footer>
+    <footer class=" nonModal">
       <div class="footer">
         <div></div>
         <div class="legal">
