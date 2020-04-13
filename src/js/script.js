@@ -4,10 +4,8 @@ const play = document.querySelector(".play");
 const volumeDown = document.querySelector(".volume-down");
 const forward = document.querySelector(".forward");
 const backOff = document.querySelector(".backOff");
-var progress = document.querySelector("progress");
 var sound = document.querySelector("sound");
 var volume = document.querySelector("volume");
-
 volumeDown.addEventListener("click", () => {
   if (video.volume - 0.1 <= 0) {
     video.volume = 0;
