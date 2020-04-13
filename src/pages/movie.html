@@ -110,23 +110,64 @@
       </div>
       </div>
       <div class="modalPlayer">
-      <div class="wrapper"><video class="video"></video></div>
-      <div class="controller">
-        <button class="play">
-          <img src="../img/play.svg" alt="play pause" />
-        </button>
-        <button class="backOff">
-          <img src="../img/back.svg" alt="backoff 10s" />
-        </button>
-        <button class="forward">
-          <img src="../img/forward.svg" alt="forward 10s" />
-        </button>
-        <button class="volume-up">+</button>
-        <button class="volume-down">-</button>
-      </div>
-      <div class="Progress">
-        <div class="Bar"></div>
-      </div>
+        <div class="wrapper"><video class="video"></video></div>
+        <div class="action">
+          <div class="back">
+            <a href="movie.html"
+              ><button><img src="../img/backarrow.png" alt="return" /></button
+            ></a>
+          </div>
+          <div class="player__info">
+            <div>
+              <progress class="progress" value="0"> </progress>
+            </div>
+            <div class="controller">
+              <div class="controller__left">
+                <button class="play">
+                  <img src="../img/play.svg" alt="play" />
+                </button>
+                <button class="backOff">
+                  <img src="../img/back.svg" alt="backoff 10s" />
+                </button>
+                <button class="forward">
+                  <img src="../img/forward.svg" alt="forward 10s" />
+                </button>
+                <button class="volume-down">
+                  <img src="../img/less.png" alt="volume down" />
+                </button>
+                <button class="volume-up">
+                  <img src="../img/more.png" alt="volume up" />
+                </button>
+                <button class="sound">
+                  <img src="../img/sound.svg" alt="volume up" />
+                </button>
+                <input
+                  class="volume"
+                  type="range"
+                  min="0"
+                  max="100"
+                  value="100"
+                  step="1"
+                />
+              </div>
+              <div class="player__title">BabySitting</div>
+              <div class="controller__right">
+                <!-- <button class="next">
+                  <img src="../img/next.svg" alt="next episode" />
+                </button> -->
+                <button class="subtitle" data-state="subtitle">
+                  <img src="../img/subtitle.svg" alt="subtitle" />
+                </button>
+                <button class="screen">
+                  <img
+                    src="../img/screen.svg"
+                    alt="full screen"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
     <footer class=" nonModal">

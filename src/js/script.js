@@ -1,17 +1,27 @@
+import soundOn from "../img/sound.svg";
+import soundOff from "../img/mute.svg";
+import playIcon from "../img/play.svg";
+import pauseIcon from "../img/pause.svg";
+
 const video = document.querySelector(".video");
 const volumeUp = document.querySelector(".volume-up");
 const play = document.querySelector(".play");
 const volumeDown = document.querySelector(".volume-down");
 const forward = document.querySelector(".forward");
 const backOff = document.querySelector(".backOff");
-var sound = document.querySelector("sound");
-var volume = document.querySelector("volume");
+const sound = document.querySelector(".sound");
+const volume = document.querySelector(".volume");
+const progress = document.querySelector(".progress");
+const screen = document.querySelector(".screen");
+const modalP = document.querySelector(".modalPlayer");
+
 volumeDown.addEventListener("click", () => {
   if (video.volume - 0.1 <= 0) {
     video.volume = 0;
   } else {
     video.volume -= 0.1;
   }
+  volume.value = video.volume * 100;
   console.log(video.volume);
 });
 
@@ -21,13 +31,16 @@ volumeUp.addEventListener("click", () => {
   } else {
     video.volume += 0.1;
   }
+  volume.value = video.volume * 100;
   console.log(video.volume);
 });
 play.addEventListener("click", () => {
   if (video.paused) {
     video.play();
+    play.innerHTML = "<img src=" + pauseIcon + " alt='pause video' />";
   } else {
     video.pause();
+    play.innerHTML = "<img src=" + playIcon + " alt='play video' />";
   }
 });
 
@@ -36,11 +49,6 @@ forward.addEventListener("click", () => {
 });
 backOff.addEventListener("click", () => {
   video.currentTime -= 10;
-});
-
-video.addEventListener("timeupdate", () => {
-  const progress = video.currentTime / video.duration;
-  bar.style.transform = "scaleX(" + progress + ")";
 });
 
 // comprhension de code
@@ -69,18 +77,33 @@ video.addEventListener("timeupdate", function () {
   progress.value = video.currentTime / video.duration;
 });
 
-// sound mute/unmute marche pas rip
+// sound mute/unmute
 
-function mute() {
+sound.addEventListener("click", function () {
   if (video.muted) {
     video.muted = false;
-    sound.innerHTML = "Mute";
+    sound.innerHTML = "<img src=" + soundOn + " alt='unmute volume' />";
   } else {
     video.muted = true;
-    sound.innerHTML = "Unmute";
+    sound.innerHTML = "<img src=" + soundOff + " alt='mute volume' />";
   }
-}
+});
 
-function setvolume() {
+// function setvolume() {
+//   video.volume = volume.value / 100;
+// }
+
+// sound controll through sound bar
+
+volume.addEventListener("input", function () {
   video.volume = volume.value / 100;
-}
+  if (volume.value == 0) {
+    sound.innerHTML = "<img src=" + soundOff + " alt='mute volume' />";
+  } else {
+    sound.innerHTML = "<img src=" + soundOn + " alt='unmute volume' />";
+  }
+});
+
+screen.addEventListener("click", function () {
+  modalP.webkitRequestFullScreen();
+});
