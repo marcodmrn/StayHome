@@ -1,19 +1,18 @@
 .signIn {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 400px;
 }
-
+.sign__img {
+  position: absolute;
+  z-index: -1;
+  opacity: 0.5;
+}
 .signIn__title {
   color: #ff8b37;
-
+  margin-top: 140px;
   font-size: 41px;
 }
 
@@ -21,6 +20,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  margin-top: 140px;
 }
 
 .signIn__input {
