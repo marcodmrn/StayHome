@@ -105,5 +105,9 @@ volume.addEventListener("input", function () {
 });
 
 screen.addEventListener("click", function () {
-  modalP.webkitRequestFullScreen();
+  if (modalP.requestFullscreen()) {
+    //need to fix that
+  } else {
+    modalP.requestFullscreen();
+  }
 });

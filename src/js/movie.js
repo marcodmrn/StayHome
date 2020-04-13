@@ -4,7 +4,9 @@ import actionM2 from "../movies/actionM2.mp4";
 const movies = document.getElementsByClassName("movie");
 const video = document.querySelector(".video");
 const modal = document.querySelector(".modalPlayer");
-const nonModal = document.querySelector(".nonModal");
+const nonModal1 = document.querySelector(".nonModal1");
+const nonModal2 = document.querySelector(".nonModal2");
+const nonModal3 = document.querySelector(".nonModal3");
 const body = document.querySelector("body");
 
 for (var i = 0; i < movies.length; i++) {
@@ -30,7 +32,9 @@ function openPlayer(movieURL) {
   modal.style.display = "block";
   body.style.height = "100vh";
   body.style.overflowY = "hidden";
-  nonModal.style.display = "none";
+  nonModal1.style.display = "none";
+  nonModal2.style.display = "none";
+  nonModal3.style.display = "none";
   console.log(movieURL);
   video.setAttribute("src", movieURL);
 }
