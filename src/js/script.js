@@ -26,6 +26,7 @@ volumeUp.addEventListener("click", () => {
 play.addEventListener("click", () => {
   if (video.paused) {
     video.play();
+    console.log("bla");
   } else {
     video.pause();
   }
