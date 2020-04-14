@@ -11,10 +11,10 @@ const body = document.querySelector("body");
 
 for (var i = 0; i < movies.length; i++) {
   movies[i].addEventListener("click", function () {
-    var movieN = event.target.getAttribute("data-movie");
-    console.log(movieN);
+    var movieID = event.target.getAttribute("data-movie");
+    console.log(movieID);
 
-    switch (movieN) {
+    switch (movieID) {
       case "actionM1":
         openPlayer(actionM1);
         break;
@@ -24,6 +24,25 @@ for (var i = 0; i < movies.length; i++) {
       default:
         console.log("Error");
     }
+  });
+}
+
+for (var i = 0; i < movies.length; i++) {
+  movies[i].addEventListener("mouseover", function () {
+    if (event.target.tagName == "DIV") {
+      event.target.firstElementChild.style.opacity = 1;
+      event.target.style.opacity = 0.3;
+    } else {
+      event.target.parentElement.style.opacity = 0.3;
+      event.target.style.opacity = 1;
+    }
+  });
+}
+
+for (var i = 0; i < movies.length; i++) {
+  movies[i].addEventListener("mouseout", function () {
+    event.target.style.opacity = 1;
+    event.target.firstElementChild.style.opacity = 0;
   });
 }
 
