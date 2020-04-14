@@ -131,9 +131,124 @@ div[data-movie="actionM1"] {
 
 div[data-movie="actionM2"] {
   background-image: url("../movies/actionM2.jpeg");
-  background-size: cover;
+  background-size: 100% 100%;
 }
+div[data-movie="actionM3"] {
+  background-image: url("../img/movie/actionM3.png");
+  background-size: 100% 100%;
+}
+div[data-movie="actionM4"] {
+  background-image: url("../img/movie/actionM4.png");
+  background-size: 100% 100%;
+}
+div[data-movie="actionM5"] {
+  background-image: url("../img/movie/actionM5.png");
+  background-size: 100% 100%;
+}
+div[data-movie="romanceM1"] {
+  background-image: url("../img/movie/romanceM1.png");
+  background-size: 100% 100%;
+}
+div[data-movie="romanceM2"] {
+  background-image: url("../img/movie/romanceM2.png");
+  background-size: 100% 100%;
+}
+/* div[data-movie="romanceM3"] {
+  // background-image: url("../img/movie/romanceM3.png");
+  background-size: 100% 100%;
+}
+div[data-movie="romanceM4"] {
+  //  background-image: url("../img/movie/romanceM4.png");
+  background-size: 100% 100%;
+}
+div[data-movie="romanceM5"] {
+  // background-image: url("../img/movie/romanceM5.png");
+  background-size: 100% 100%;
+} */
 
+div[data-movie="comedyM1"] {
+  background-image: url("../img/movie/comedyM1.png");
+  background-size: 100% 100%;
+}
+div[data-movie="comedyM2"] {
+  background-image: url("../img/movie/comedyM2.png");
+  background-size: 100% 100%;
+}
+div[data-movie="comedyM3"] {
+  background-image: url("../img/movie/comedyM3.png");
+  background-size: 100% 100%;
+}
+/* div[data-movie="comedyM4"] {
+   background-image: url("../img/movie/comedyM4.png");
+  background-size: 100% 100%;
+}
+div[data-movie="comedyM5"] {
+   background-image: url("../img/movie/comedyM5.png");
+  background-size: 100% 100%;
+} */
+
+div[data-movie="horrorM1"] {
+  background-image: url("../img/movie/horrorM1.png");
+  background-size: 100% 100%;
+}
+div[data-movie="horrorM2"] {
+  background-image: url("../img/movie/horrorM2.png");
+  background-size: 100% 100%;
+}
+div[data-movie="horrorM3"] {
+  background-image: url("../img/movie/horrorM3.png");
+  background-size: 100% 100%;
+}
+/* div[data-movie="horrorM4"] {
+   background-image: url("../img/movie/horrorM4.png");
+   background-size: 100% 100%;
+}
+div[data-movie="horrorM5"] {
+   background-image: url("../img/movie/horrorM5.png");
+   background-size: 100% 100%;
+} */
+
+/* div[data-movie="thrillerM1"] {
+  background-image: url("../img/movie/thrillerM1.png");
+  background-size: 100% 100%;
+} */
+div[data-movie="thrillerM2"] {
+  background-image: url("../img/movie/thrillerM2.png");
+  background-size: 100% 100%;
+}
+div[data-movie="thrillerM3"] {
+  background-image: url("../img/movie/thrillerM3.png");
+  background-size: 100% 100%;
+}
+/* div[data-movie="thrillerM4"] {
+   background-image: url("../img/movie/thrillerM4.png");
+   background-size: 100% 100%;
+}
+div[data-movie="thrillerM5"] {
+   background-image: url("../img/movie/thrillerM5.png");
+   background-size: 100% 100%;
+} */
+
+div[data-movie="dramaM1"] {
+  background-image: url("../img/movie/dramaM1.png");
+  background-size: 100% 100%;
+}
+div[data-movie="dramaM2"] {
+  background-image: url("../img/movie/dramaM2.png");
+  background-size: 100% 100%;
+}
+/* div[data-movie="dramaM3"] {
+  background-image: url("../img/movie/dramaM3.png");
+  background-size: 100% 100%;
+} */
+/* div[data-movie="dramaM4"] {
+   background-image: url("../img/movie/dramaM4.png");
+   background-size: 100% 100%;
+}
+div[data-movie="dramaM5"] {
+   background-image: url("../img/movie/dramaM5.png");
+   background-size: 100% 100%;
+} */
 .modalPlayer {
   display: none;
   position: fixed;
