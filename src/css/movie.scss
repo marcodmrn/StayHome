@@ -7,10 +7,31 @@
 
 .main__trending {
   width: 1080px;
-  height: 250px;
+  height: 216px;
   background-color: blueviolet;
   margin-top: 80px;
+  overflow: hidden;
+  position: relative;
 }
+
+.trending__slider {
+  transition: transform 0.3s;
+  width: 400%;
+  height: 216px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  li {
+    float: left;
+  }
+}
+
+.trending__slides {
+  width: 1080px;
+  height: 216px;
+  object-fit: cover;
+}
+
 .main__choose {
   display: flex;
   width: 100%;
@@ -50,7 +71,19 @@
       opacity: 0;
     }
   }
+
+  .movie:hover {
+    opacity: 0.8;
+    transform: scale(0.9);
+    p {
+      opacity: 1;
+    }
+  }
 }
+.choose_cat:hover {
+  transform: scale(0.9);
+}
+
 .category__trending::after {
   content: "Action";
   color: #ff8b37;

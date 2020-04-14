@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/style.scss" />
-     <script defer src="../js/script.js"></script>
-     <script defer src="../js/movie.js"></script>
+    <script defer src="../js/script.js"></script>
+    <script defer src="../js/movie.js"></script>
     <title>StayHome</title>
   </head>
   <body>
@@ -37,14 +37,21 @@
     <main>
       <div class="nonModal2">
       <div class="main">
-        <div class="main__trending"></div>
+        <div class="main__trending">
+          <ul class ="trending__slider">
+		        <li><img class="trending__slides" src="../img/movie/amslide.png"/></li>
+            <li><img class="trending__slides" src="../img/movie/tslide.png"/></li>
+            <li><img class="trending__slides" src="../img/series/gotslide.png"/></li>
+            <li><img class="trending__slides" src="../img/series/tspslide.png"/></li>
+	        </ul>
+        </div>
         <div class="main__choose">
-          <div><a href=#action>Action</a></div>
-          <div><a href="#romance">Romance</a></div>
-          <div><a href="#comedy">Comedy</a></div>
-          <div><a href="#horror">Horror</a></div>
-          <div><a href="#thriller">Thriller</a></div>
-          <div><a href="#drama">Drama</a></div>
+          <div class="choose_cat"><a href="#action">Action</a></div>
+          <div class="choose_cat"><a href="#romance">Romance</a></div>
+          <div class="choose_cat"><a href="#comedy">Comedy</a></div>
+          <div class="choose_cat"><a href="#horror">Horror</a></div>
+          <div class="choose_cat"><a href="#thriller">Thriller</a></div>
+          <div class="choose_cat"><a href="#drama">Drama</a></div>
         </div>
         <div class="main__category category">
           <div class="category__row category__trending">

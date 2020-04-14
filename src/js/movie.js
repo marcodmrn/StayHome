@@ -8,6 +8,7 @@ const nonModal1 = document.querySelector(".nonModal1");
 const nonModal2 = document.querySelector(".nonModal2");
 const nonModal3 = document.querySelector(".nonModal3");
 const body = document.querySelector("body");
+const slider = document.querySelector(".trending__slider");
 
 for (var i = 0; i < movies.length; i++) {
   movies[i].addEventListener("click", function () {
@@ -27,27 +28,7 @@ for (var i = 0; i < movies.length; i++) {
   });
 }
 
-for (var i = 0; i < movies.length; i++) {
-  movies[i].addEventListener("mouseover", function () {
-    if (event.target.tagName == "DIV") {
-      event.target.firstElementChild.style.opacity = 1;
-      event.target.style.opacity = 0.3;
-    } else {
-      event.target.parentElement.style.opacity = 0.3;
-      event.target.style.opacity = 1;
-    }
-  });
-}
-
-for (var i = 0; i < movies.length; i++) {
-  movies[i].addEventListener("mouseout", function () {
-    event.target.style.opacity = 1;
-    event.target.firstElementChild.style.opacity = 0;
-  });
-}
-
 function openPlayer(movieURL) {
-  // var urlQuery = encodeURIComponent("");
   modal.style.display = "block";
   body.style.height = "100vh";
   body.style.overflowY = "hidden";
@@ -57,3 +38,36 @@ function openPlayer(movieURL) {
   console.log(movieURL);
   video.setAttribute("src", movieURL);
 }
+
+var margin = -1080;
+setInterval(function () {
+  slider.style.marginLeft = margin + "px";
+  console.log(margin);
+  margin -= 1080;
+  if (margin == -4320) {
+    margin = 0;
+  }
+  // .animate({ marginLeft: "-1080px" }, 800, function () {
+  //   this.css({ marginLeft: 0 }).find("li:last").after(this.find("li:first"));
+  // });
+}, 3500);
+
+// hover
+// for (var i = 0; i < movies.length; i++) {
+//   movies[i].addEventListener("mouseover", function () {
+//     if (event.target.tagName == "DIV") {
+//       event.target.firstElementChild.style.opacity = 1;
+//       event.target.style.opacity = 0.3;
+//     } else {
+//       event.target.parentElement.style.opacity = 0.3;
+//       event.target.style.opacity = 1;
+//     }
+//   });
+// }
+
+// for (var i = 0; i < movies.length; i++) {
+//   movies[i].addEventListener("mouseout", function () {
+//     event.target.style.opacity = 1;
+//     event.target.firstElementChild.style.opacity = 0;
+//   });
+// }
