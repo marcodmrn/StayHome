@@ -71,17 +71,17 @@
       opacity: 0;
     }
   }
+}
 
-  .movie:hover {
-    opacity: 0.8;
-    transform: scale(0.9);
-    p {
-      opacity: 1;
-    }
-  }
+.movie:hover {
+  opacity: 0.5;
+  transform: scale(0.9);
 }
 .choose_cat:hover {
-  transform: scale(0.9);
+  transform: scale(0.7);
+  a {
+    transform: scale(2);
+  }
 }
 
 .category__trending::after {
