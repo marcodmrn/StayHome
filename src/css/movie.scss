@@ -84,13 +84,8 @@
   }
 }
 
-.category__trending::after {
-  content: "Action";
-  color: #ff8b37;
-  font-size: 30px;
-}
 .category::before {
-  content: "Trending";
+  content: "Action";
   color: #ff8b37;
   font-size: 30px;
 }
