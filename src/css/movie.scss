@@ -71,15 +71,11 @@
       opacity: 0;
     }
   }
+}
 
-  .movie:hover {
-    opacity: 0.5;
-    transform: scale(0.9);
-    p {
-      opacity: 1;
-      transform: scale(1.4);
-    }
-  }
+.movie:hover {
+  opacity: 0.5;
+  transform: scale(0.9);
 }
 .choose_cat:hover {
   transform: scale(0.7);
