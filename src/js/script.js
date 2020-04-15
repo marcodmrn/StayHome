@@ -4,7 +4,7 @@ import playIcon from "../img/play.svg";
 import pauseIcon from "../img/pause.svg";
 
 const video = document.querySelector(".video");
-// onst volumeUp = document.querySelector(".volume-up");
+// const volumeUp = document.querySelector(".volume-up");
 const play = document.querySelector(".play");
 // const volumeDown = document.querySelector(".volume-down");
 const forward = document.querySelector(".forward");
@@ -15,25 +15,27 @@ const progress = document.querySelector(".progress");
 const screen = document.querySelector(".screen");
 const modalP = document.querySelector(".modalPlayer");
 
-/* volumeDown.addEventListener("click", () => {
-  if (video.volume - 0.1 <= 0) {
-    video.volume = 0;
-  } else {
-    video.volume -= 0.1;
-  }
-  volume.value = video.volume * 100;
-  console.log(video.volume);
-});
 
-volumeUp.addEventListener("click", () => {
-  if (video.volume + 0.1 >= 1) {
-    video.volume = 1;
-  } else {
-    video.volume += 0.1;
-  }
-  volume.value = video.volume * 100;
-  console.log(video.volume);
-}); */
+// volumeDown.addEventListener("click", () => {
+//   if (video.volume - 0.1 <= 0) {
+//     video.volume = 0;
+//   } else {
+//     video.volume -= 0.1;
+//   }
+//   volume.value = video.volume * 100;
+//   console.log(video.volume);
+// });
+
+// volumeUp.addEventListener("click", () => {
+//   if (video.volume + 0.1 >= 1) {
+//     video.volume = 1;
+//   } else {
+//     video.volume += 0.1;
+//   }
+//   volume.value = video.volume * 100;
+//   console.log(video.volume);
+// });
+
 play.addEventListener("click", () => {
   if (video.paused) {
     video.play();
