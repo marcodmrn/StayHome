@@ -15,6 +15,7 @@ const progress = document.querySelector(".progress");
 const screen = document.querySelector(".screen");
 const modalP = document.querySelector(".modalPlayer");
 
+
 // volumeDown.addEventListener("click", () => {
 //   if (video.volume - 0.1 <= 0) {
 //     video.volume = 0;
@@ -34,6 +35,7 @@ const modalP = document.querySelector(".modalPlayer");
 //   volume.value = video.volume * 100;
 //   console.log(video.volume);
 // });
+
 play.addEventListener("click", () => {
   if (video.paused) {
     video.play();
